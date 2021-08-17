@@ -56,16 +56,47 @@
       não esquecer de falar do ACTION
     -->
     
-    <form>
-      <input type="text">
-      <input type="number">
-      <input tye="email">
-      <input type="date">
-      <input type="time">
-      <input type="datetime-local">
-      <input type="color">
-      <input type="file">
-      <input type="password">
+    <form action="login.html" method="POST">
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome">
+      </div>
+      <div>
+        <label for="telefone">Telefone:</label>
+        <input type="number" id="telefone" name="telefone">
+      </div>
+      <div>
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div>
+        <label for="data_entrega">Data Entrega:</label>
+        <input type="date" id="data_entrega" name="dataEntrega">
+      </div>
+      <div>
+        <label for="hora_entrega">Hora Entrega:</label>
+        <input type="time" id="hora_entrega" name="horaEntrega">
+      </div>
+      <div>
+        <label for="evento">Data/Hora Evento:</label>
+        <input type="datetime-local" id="evento" name="evento">
+      </div>
+      <div>
+        <label for="cor">Cor:</label>
+        <input type="color" id="cor" name="cor">
+      </div>
+      <div>
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name="foto">
+      </div>
+      <div>
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha">
+      </div>
+      
+      <input type="button" value="Inserir">
+      <input type="reset" value="Limpar">
+      <input type="submit" value="Salvar">
     </form>
 
   </body>
