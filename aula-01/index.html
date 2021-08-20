@@ -6,12 +6,12 @@
     <meta charset="UTF-8">
   </head>
   <body>
-    <h1>Autenticação HTML</h1>
-    <h2>Autenticação HTML</h2>
-    <h3>Autenticação HTML</h3>
-    <h4>Autenticação HTML</h4>
-    <h5>Autenticação HTML</h5>
-    <h6>Autenticação HTML</h6>
+    <h1>Autenticação <span>HTML</span></h1>
+    <h2>Autenticação <span>HTML</span></h2>
+    <h3>Autenticação <span>HTML</span></h3>
+    <h4>Autenticação <span>HTML</span></h4>
+    <h5>Autenticação <span>HTML</span></h5>
+    <h6>Autenticação <span>HTML</span></h6>
 
     <p>Este é um parágrafo
       <br>
@@ -28,7 +28,7 @@
     <ol>
       <li>EUA</li>
       <li>China</li>
-      <li>Atletas da Russia</li>
+      <li>Atletas da <span>Russia</span></li>
     </ol>
 
     <ul>
@@ -93,12 +93,60 @@
         <label for="senha">Senha:</label>
         <input type="password" id="senha" name="senha">
       </div>
+      <div>
+        <label for="segunda">Segunda-Feira</label>
+        <input type="checkbox" id="segunda">
+        <label for="terca">Terça-Feira</label>
+        <input type="checkbox" id="terca">
+        <label for="quarta">Quarta-Feira</label>
+        <input type="checkbox" id="quarta">
+      </div>
+      <div>
+        <label for="matutino">Matutino</label>
+        <input type="radio" id="matutino" name="periodo">
+        <label for="noturno">Noturno</label>
+        <input type="radio" id="noturno" name="periodo">
+      </div>
+
       
       <input type="button" value="Inserir">
       <input type="reset" value="Limpar">
       <input type="submit" value="Salvar">
     </form>
 
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>CPF</th>
+          <th>Telefone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>João</td>
+          <td>123.123.123-11</td>
+          <td>1234-1234</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>321.321.321-33</td>
+          <td>4321-4321</td>
+        </tr>
+        <tr>
+          <td rowspan="2">José</td>
+          <td rowspan="2">654.654.654-66</td>
+          <td>7654-7654</td>
+        </tr>
+        <tr>
+          <td>9999-9999</td>
+        </tr>
+        <tr>
+          <td colspan="2">Mario</td>
+          <td>8888-8765</td>
+        </tr>
+      </tbody>
+    </table>
   </body>
 </html>
 
