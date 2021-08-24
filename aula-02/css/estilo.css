@@ -1,0 +1,13 @@
+#myTitle {
+  color: green;
+  font-size: 12px;
+  font-style: italic;
+  text-align: center;
+}
+
+.blueFont {
+  font-family: Arial;
+  font-weight: bolder;
+  color: blue;
+}
+
