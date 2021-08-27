@@ -55,3 +55,50 @@ div.center {
   height: 45px;
   margin: 10px auto;
 }
+
+table {
+  border-collapse: collapse;
+}
+
+table#clientes td, 
+table#clientes th {
+  border: 3px solid red;
+}
+
+table#usuarios td,
+table#usuarios th {
+  border: 3px solid green;
+}
+
+.celular-personalizada {
+  background-color: rgb(168, 165, 165);
+  color: white;
+  font-style: italic;
+}
+
+.fundoCinza {
+  background-color: rgb(168, 165, 165);
+}
+
+.textoBranco {
+  color: white;
+}
+
+.italico {
+  font-style: italic;  
+}
+
+body {
+  background-image: url('../../images/bandeira-brasil.jpg');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+  background-attachment: fixed;
+}
+
+.elementoBloco {
+  display: block;
+}
+
+#minhaDiv {
+  display: inline;
+}
