@@ -1,0 +1,66 @@
+p {
+  color: blue;
+}
+
+.redText {
+  color: red;
+}
+
+#secondParagraph {
+  color: orange;
+}
+
+div span {
+  color: green;
+}
+
+div > span, 
+h1 > span {
+  color: yellow;
+}
+
+a[type] {
+  font-size: 10px;
+}
+
+a[href="http://www.amazon.com"] {
+  color: rgb(99, 55, 6);
+}
+
+a[href$=".br"] {
+  color: green;  
+}
+
+input[type="button"] {
+  cursor: pointer;
+  background-color: green;
+  border: 1px solid black;
+}
+
+input[type="button"]:hover {
+  background-color: greenyellow;
+  border: 1px solid gray;
+}
+
+a:visited {
+  color: pink;
+}
+
+
+input[type="text"]:focus {
+  box-shadow:  5px -1px teal;
+}
+
+li:first-child {
+  border-bottom: 2px solid blue;
+}
+
+a::after {
+  content: "→";
+}
+
+a::before {
+  content: "<-";
+}
+
+
