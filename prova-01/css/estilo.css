@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  width: 70%;
+  height: 550px;
+  margin: 20px auto;
+  border: 1px solid black;
+}
+
+h1 {
+  margin: 20px 0;
+  text-align: center;
+}
+
+table {
+  width: 90%;
+  margin: 10px;
+  text-align: center;
+  border-collapse: collapse;
+  padding: 5px;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #c4c1c1;
+}
+
+tr:hover {
+  background-color: #e3f8d9;
+}
+
+td, th {
+  height: 30px;
+  border: 1px solid black;
+}
+
+img {
+  width: 400px;
+  display: block;
+  margin: 10px auto;
+}
