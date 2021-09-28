@@ -31,11 +31,3 @@ console.log('Estou aprendendo JS')
 console.log(student)
 console.log(student.email)
 console.log(student.cpf)
-
-
-
-
-
-
-
-
