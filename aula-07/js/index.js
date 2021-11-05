@@ -23,26 +23,22 @@ const saveBtnEvent = event => {
 }
 
 const editBtnEvent = event => {
-  const input = event.target
-  const td = input.parentNode
-  const tr = td.parentNode
+  const tr = getLineElement(event)
   studentEditIndex = tr.rowIndex
 
-  const inputName = document.getElementById('name')
-  const inputEmail = document.getElementById('email')
-  const inputPhone = document.getElementById('phone')
-  inputName.value = tr.children[0].innerHTML
-  inputEmail.value = tr.children[1].innerHTML
-  inputPhone.value = tr.children[2].innerHTML
+  sourceIds.forEach((id, index) => {
+    const input = document.getElementById(id)
+    input.value = tr.children[index].innerHTML
+  })
 }
 
 const deleteBtnEvent = event => {
-  const input = event.target
-  const td = input.parentNode
-  const tr = td.parentNode
+  const tr = getLineElement(event)
   const tbody = tr.parentNode
   tbody.removeChild(tr)
 }
+
+const getLineElement = event => event.target.parentNode.parentNode
 
 const clearFields = () => {
   sourceIds.forEach(id => {
@@ -70,19 +66,17 @@ const createNewRow = tbody => {
     tr.appendChild(td)
   })
   
-  const tdEdit = document.createElement('td')
-  const tdDelete = document.createElement('td')
-  
-  const inputEdit = createInputButton('Editar', editBtnEvent)
-  const inputDelete = createInputButton('Remover', deleteBtnEvent)
-
-  tdEdit.appendChild(inputEdit)
-  tdDelete.appendChild(inputDelete)
-
-  tr.appendChild(tdEdit)
-  tr.appendChild(tdDelete)
+  tr.appendChild(createTdWithInput('Editar', editBtnEvent))
+  tr.appendChild(createTdWithInput('Remover', deleteBtnEvent))
 
   tbody.appendChild(tr)
+}
+
+const createTdWithInput = (inputValue, onclickEvent) => {
+  const td = document.createElement('td')
+  const input = createInputButton(inputValue, onclickEvent)
+  td.appendChild(input)
+  return td
 }
 
 const createInputButton = (inputValue, onclickEvent) => {
